@@ -4,9 +4,12 @@ html(lang='es')
     title=title
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
-
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script', rel='stylesheet')
     link(rel='stylesheet', href='app.css')
+    
+    script(src='https://use.fontawesome.com/40265f4086.js')
+
 
     link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
     link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
@@ -27,18 +30,20 @@ html(lang='es')
     meta(name='theme-color', content='#ffffff')
   body
     section#main-container
-
+    
     footer.site-footer
-      .container
-        .row
-          .col.s12.l3.center-align
-            a.dropdown-button.btn.btn-flat(href='#', data-activates='dropdown1') Idioma
+    .container
+      .row
+        .col.s12.l3.center-align
+            a.dropdown-button.btn(href='#', data-activates='dropdown1') Idioma
             ul#dropdown1.dropdown-content
               li
                 a(href='#!') Español
               li
                 a(href='#!') Inglés
-          .col.s12.l3.push-l6.center-align
-            | © 2017 FotoCom
-    script(src='http://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+        .col.s12.l3.push-l6.center-align
+          | © 2017 FotoCom
+   
+    script(type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')
     script(type='application/javascript' src='app.js')

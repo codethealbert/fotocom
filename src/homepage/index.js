@@ -1,6 +1,10 @@
 var page = require('page');
+var empty = require('empty-element');
+var template = require('./template.js');
+var title = require('title');
 
 page('/', function(ctx, next){
+  title('FotoCom');
   var main = document.getElementById('main-container');
-  main.innerHTML = '<a href="/signup">Signup</a>';
+  empty(main).appendChild(template);
 })
